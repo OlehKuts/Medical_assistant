@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/medical_assistant/static/css/main.415ffcef.css",
+    "main.js": "/medical_assistant/static/js/main.618c5f65.js",
+    "index.html": "/medical_assistant/index.html",
+    "main.415ffcef.css.map": "/medical_assistant/static/css/main.415ffcef.css.map",
+    "main.618c5f65.js.map": "/medical_assistant/static/js/main.618c5f65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.415ffcef.css",
+    "static/js/main.618c5f65.js"
+  ]
+}
