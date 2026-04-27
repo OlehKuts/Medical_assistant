@@ -46,11 +46,11 @@ export const AnalyseItem = ({ patient, analyse, ...props }) => {
         </div>
       ) : null}
       <div className="directions_analyseLine">
-        <Text fontWeight="bold" marginRight="10px" {...props}>
-          Лікар
+        <Text fontWeight="bold" marginRight="10px" {...props} size="16px">
+          Лікар (ЛОР-відділення)
         </Text>
         {""}
-        <Text>{doctor}</Text>
+        <Text size="16px">{doctor}</Text>
       </div>
       <div className="directions_analyseLine">
         <Text fontWeight="bold" marginRight="10px" {...props}>
@@ -58,13 +58,6 @@ export const AnalyseItem = ({ patient, analyse, ...props }) => {
         </Text>
         {""}
         <Text>{stringifiedDate}</Text>
-      </div>
-      <div className="directions_analyseLine">
-        <Text fontWeight="bold" marginRight="10px" {...props}>
-          {analyse.feature}
-        </Text>
-        {""}
-        <Text>ЛОР</Text>
       </div>
     </div>
   );

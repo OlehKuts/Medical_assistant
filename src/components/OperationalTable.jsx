@@ -5,7 +5,7 @@ export class OperationalTable extends Component {
   render() {
     const { store } = this.props;
     return (
-      <table>
+      <table className="operationalTable">
         <thead>
           <tr>
             <td>№</td>

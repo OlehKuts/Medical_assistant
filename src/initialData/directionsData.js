@@ -2,7 +2,6 @@ export const analyses = [
   {
     id: 1,
     name: "загальний аналіз крові",
-    feature: "Відділення",
     needDirection: true,
     shortName: "ЗАК",
     forLor: true,
@@ -11,7 +10,6 @@ export const analyses = [
   {
     id: 2,
     name: "загальний аналіз сечі",
-    feature: "Примітки",
     needDirection: true,
     shortName: "ЗАС",
     forLor: true,
@@ -20,7 +18,6 @@ export const analyses = [
   {
     id: 3,
     name: "аналіз крові на групу та резус-фактор ",
-    feature: "Група крові",
     needDirection: true,
     shortName: "Група крові",
     forLor: true,
@@ -29,7 +26,6 @@ export const analyses = [
   {
     id: 4,
     name: "глюкоза крові",
-    feature: "Примітки",
     needDirection: true,
     shortName: "Глюкоза",
     forDent: true,
@@ -38,7 +34,6 @@ export const analyses = [
   {
     id: 5,
     name: "коагулограма",
-    feature: "Примітки",
     needDirection: true,
     shortName: "Коагулограма",
     forLor: true,
@@ -47,7 +42,6 @@ export const analyses = [
   {
     id: 6,
     name: "ЕКГ",
-    feature: "Примітки",
     needDirection: false,
     shortName: "ЕКГ",
     forLor: true,
@@ -56,7 +50,6 @@ export const analyses = [
   {
     id: 7,
     name: "Біохімічний аналіз крові (глюкоза, білок загальний, креатинін, сечовина, K, Na, Ca)",
-    feature: "Примітки",
     needDirection: true,
     shortName: "Біохімічний",
     forLor: true,
@@ -65,7 +58,6 @@ export const analyses = [
   {
     id: 7,
     name: "Біохім. аналіз крові (креатинін, сечовина, K, Na, Ca)",
-    feature: "Примітки",
     needDirection: true,
     shortName: "Біохімічний",
     forDent: true,
@@ -75,7 +67,6 @@ export const analyses = [
 
 export const examinationTemplate = {
   name: "",
-  feature: "Примітки",
   needDirection: true,
   shortName: "",
 };

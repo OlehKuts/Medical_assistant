@@ -144,7 +144,6 @@ table {
 .operational_td {
   padding: 6px;
 }
-
 .operational_main table,
 .operational_main th,
 .operational_main td {
@@ -222,15 +221,16 @@ table {
   align-items: center;
 }
 .operational_flexBetween {
-  width: 1000px;
+  width: 950px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
 }
 .operational_main table {
-  width: 1100px;
-  margin: 20px auto;
+  font-size: 14px;
+  width: 950px;
+  background-color: lavender;
 }
 .operational_tdWide {
   width: 250px;
@@ -270,6 +270,10 @@ table {
 .directions_secondHeader,
 .directions_block {
   border-bottom: 1px solid black;
+}
+.secondHeaderLine {
+  text-align: center;
+  margin: 0 auto;
 }
 .directions_headerPart1 {
   border-right: 1px solid black;
@@ -510,6 +514,7 @@ table {
 .super {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .dateForm {
   display: flex;
