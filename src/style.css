@@ -226,11 +226,11 @@ table {
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
+  margin-top: 20px;
 }
 .operational_main table {
   font-size: 14px;
   width: 950px;
-  background-color: lavender;
 }
 .operational_tdWide {
   width: 250px;
