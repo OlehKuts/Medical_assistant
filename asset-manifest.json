@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Medical_assistant/static/css/main.eb84f63a.css",
+    "main.css": "/Medical_assistant/static/css/main.2f31c3e6.css",
     "main.js": "/Medical_assistant/static/js/main.2b421a6f.js",
     "index.html": "/Medical_assistant/index.html",
-    "main.eb84f63a.css.map": "/Medical_assistant/static/css/main.eb84f63a.css.map",
+    "main.2f31c3e6.css.map": "/Medical_assistant/static/css/main.2f31c3e6.css.map",
     "main.2b421a6f.js.map": "/Medical_assistant/static/js/main.2b421a6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb84f63a.css",
+    "static/css/main.2f31c3e6.css",
     "static/js/main.2b421a6f.js"
   ]
 }
