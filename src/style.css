@@ -1,0 +1,596 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.appFooter {
+  position: fixed;
+  bottom: 0;
+}
+.appNavbar {
+  width: 100%;
+}
+.navbarIcons {
+  margin: 3px 8px 7px 8px;
+}
+.active {
+  font-weight: bold;
+}
+.brandText {
+  color: white;
+  margin: auto 10px;
+}
+button {
+  cursor: pointer;
+}
+select:hover {
+  background-color: silver;
+  box-shadow:
+    0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover,
+.operational_submit:hover {
+  background-color: #555555;
+  color: white;
+  box-shadow:
+    0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+/* code_helper */
+.codeHelper {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.helper_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  border: 1px solid black;
+  box-shadow: 0 0 4px 1px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffeaff;
+}
+.helper_header {
+  margin: 10px auto 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+.helper_heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "montserrat";
+}
+
+.codeHelper button,
+.codeHelper select,
+.directions button,
+.directions select {
+  height: 2.4rem !important;
+  border: 2px solid #a5b1c2;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+#helper_select {
+  width: 15rem;
+}
+.helper_line input {
+  border: 2px solid #a5b1c2;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  size: 1.2rem;
+  height: 2.4rem;
+  margin: 0.2rem auto 0rem auto;
+}
+
+.codeHelper label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 100px;
+}
+#helper_longLabel {
+  width: 360px;
+}
+.helper_longInput {
+  width: 24rem;
+}
+.codeHelper select {
+  width: 10.5rem;
+}
+#helper_sendLine {
+  text-align: center;
+}
+.helper_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.checkboxLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  column-gap: 10px;
+}
+.helper_checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 4px;
+}
+.checkboxLine div {
+  margin: 5px;
+}
+
+/* operational list */
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.operational_td {
+  padding: 6px;
+}
+
+.operational_main table,
+.operational_main th,
+.operational_main td {
+  border: 2px solid #4a4a4a;
+}
+.operational_main select,
+.operational_main button,
+.operational_submit {
+  height: 2.4rem !important;
+  border: 2px solid #555555;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  /* margin: 0.2rem; */
+}
+.operational_main input {
+  border: 2px solid #555555;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  size: 1.2rem;
+  height: 2rem;
+  margin: 0.25rem;
+}
+
+.operational_longInput {
+  width: 30rem !important;
+  height: 2.4rem !important;
+}
+#operational_middleInput {
+  width: 15rem;
+  height: 2.4rem;
+  margin-left: 1rem;
+}
+.operational_shortSelect {
+  width: 80px !important;
+  margin: 4px 8px auto 8px !important;
+  margin-right: 10px !important;
+}
+.operational_middleSelect {
+  width: 8rem;
+  margin: 4px 8px auto 8px !important;
+}
+.operational_main label {
+  font-size: 1.2rem;
+}
+.operational_form {
+  width: 100%;
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto 20px auto;
+  padding: 10px;
+}
+.operational_formLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+.operational_sendLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.operational_dateForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.operational_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.operational_flexBetween {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.operational_main table {
+  width: 1100px;
+  margin: 20px auto;
+}
+.operational_tdWide {
+  width: 250px;
+}
+.operational_tdMiddle {
+  width: 150px;
+}
+.operational_main tr {
+  height: 40px;
+}
+.operationalBtn {
+  margin-right: 8px;
+}
+.operational_header {
+  font-size: 24px;
+  font-weight: bold;
+}
+.operationalRow td {
+  padding: 5px !important;
+}
+.operationalReadyBtn {
+  margin-bottom: 20px;
+}
+
+/* directions */
+
+.directions {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1010px;
+  margin: 0 auto;
+}
+.directions_header,
+.directions_nameAdress,
+.directions_secondHeader,
+.directions_block {
+  border-bottom: 1px solid black;
+}
+.directions_headerPart1 {
+  border-right: 1px solid black;
+}
+.directions_header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.directions_heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px auto 10px auto;
+}
+.directions_headerPart {
+  width: 50%;
+}
+.directions_secondHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+.directions_block {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.directions_mainBlock {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+}
+.smallAnalyseBlock {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 10px;
+  background-color: white;
+  padding: 5px 5px 10px;
+  margin: 10px;
+  box-shadow: 0 0 1px 0.5px;
+}
+.smallAnalyse,
+.removeAnalyse {
+  height: 60px;
+  width: 120px;
+  background-color: floralwhite;
+  padding: 16px 8px 8px 8px;
+  text-align: center;
+  border: 0.5px solid black;
+  margin-top: 5px;
+  place-self: center;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.smallAnalyse:hover {
+  opacity: 0.2;
+  box-shadow: 0 0 4px 1px;
+}
+.directions_footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.directions_footerLeft {
+  width: 35%;
+  text-align: center;
+}
+.directions_empty {
+  height: 80px;
+}
+.directions_super {
+  display: flex;
+  flex-direction: row;
+}
+.directions_dateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  border: 1px solid black;
+  box-shadow: 0 0 4px 1px;
+  width: 420px;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+#directions_specialLine {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.directions_shortInput {
+  width: 12rem;
+  height: 2.4rem !important;
+  border-radius: 0.4rem;
+}
+.directions_mediumInput {
+  width: 16rem;
+  height: 2.4rem !important;
+  border-radius: 0.4rem;
+}
+.directions_longInput {
+  width: 22rem;
+  height: 2.4rem !important;
+  border-radius: 0.4rem;
+}
+#directions_sendLine {
+  text-align: center;
+}
+.directions_mediumSelect {
+  width: 15rem;
+}
+.directions_longSelect {
+  width: 17rem !important;
+}
+.directions_extraLongSelect {
+  width: 22rem !important;
+}
+.directions_likeLabel {
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.directions_controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+#directions_activeBtn {
+  background-color: orange;
+  color: white;
+}
+.directions_centered {
+  text-align: center;
+  margin: 6px auto;
+  font-weight: bold;
+}
+.directions_analyseLine {
+  border-bottom: 2px solid silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 480px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.directions_analyseLine div {
+  font-size: 22px !important;
+}
+#directions_analyseItem {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  font-size: 14px !important;
+}
+#directions_lettersSelect {
+  width: 5rem;
+}
+.directions_ownExaminations {
+  display: flex;
+  flex-direction: row;
+}
+#ownExamInput {
+  margin-top: 3.5px;
+}
+
+/* statement */
+.statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  border: 1px solid black;
+}
+.header,
+.nameAdress,
+.secondHeader,
+.block {
+  border-bottom: 1px solid black;
+}
+.headerPart1 {
+  border-right: 1px solid black;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.headerPart {
+  width: 50%;
+}
+.secondHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+.block {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.footerLeft {
+  width: 35%;
+  text-align: center;
+}
+.empty {
+  height: 80px;
+}
+.super {
+  display: flex;
+  flex-direction: row;
+}
+.dateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  border: 1px solid black;
+  box-shadow: 0 0 4px 1px;
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: aliceblue;
+}
+.statement select,
+.statement button,
+.statement .submit {
+  height: 2.4rem !important;
+  border: 2px solid #555555;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  margin: 0.2rem;
+}
+.statement_input {
+  border: 2px solid #555555;
+  width: 10rem;
+  border-radius: 0.4rem;
+  transition-duration: 0.2s;
+  size: 1.2rem;
+  height: 2rem;
+  margin: 0.2rem;
+}
+
+.statement .checkbox {
+  width: 1.5rem;
+  height: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+.formLine label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.formLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+.longInput {
+  width: 24rem;
+}
+#sendLine {
+  text-align: center;
+}
+.likeLabel {
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.statement_controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.formLine input {
+  width: 10rem;
+  height: 2.4rem !important;
+  border-radius: 0.4rem;
+  margin-top: 5px;
+}
+.statementLongInput {
+  width: 25rem;
+  height: 2.4rem !important;
+  border-radius: 0.4rem;
+}
+
+/* settings */
+.settingsCard {
+  width: 600px;
+}
+#doctorsArea {
+  width: 100%;
+}
