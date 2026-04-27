@@ -23,6 +23,7 @@ export const App = () => {
   const changeDoctors = (newDoctors) => {
     setDoctors(assignIds(newDoctors));
   };
+  //
   return (
     <>
       <div className="App">
