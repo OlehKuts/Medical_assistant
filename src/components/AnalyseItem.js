@@ -1,8 +1,15 @@
 import { Text } from "./Text";
 
 export const AnalyseItem = ({ patient, analyse, ...props }) => {
-  const { name, birthDate, residence, doctor, diagnosis, directionNumber } =
-    patient;
+  const {
+    name,
+    birthDate,
+    residence,
+    doctor,
+    diagnosis,
+    directionNumber,
+    shortName,
+  } = patient;
   const date = new Date();
   const stringifiedDate = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
   return (
@@ -52,13 +59,15 @@ export const AnalyseItem = ({ patient, analyse, ...props }) => {
         {""}
         <Text size="16px">{doctor}</Text>
       </div>
-      <div className="directions_analyseLine">
-        <Text fontWeight="bold" marginRight="10px" {...props}>
-          Дата
-        </Text>
-        {""}
-        <Text>{stringifiedDate}</Text>
-      </div>
+      {!shortName === "Біохімічний" ? (
+        <div className="directions_analyseLine">
+          <Text fontWeight="bold" marginRight="10px" {...props}>
+            Дата
+          </Text>
+          {""}
+          <Text>{stringifiedDate}</Text>{" "}
+        </div>
+      ) : null}
     </div>
   );
 };
